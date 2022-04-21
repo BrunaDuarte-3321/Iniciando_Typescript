@@ -48,3 +48,5 @@ setTimeout(() => {
 
   //console.log(sallary)
 },2000)
+
+// 7 - 
