@@ -79,3 +79,19 @@ const showDogDetails = (dog) => {
 };
 showDogDetails(turca);
 showDogDetails(bob);
+// Desafio Narrowing
+/* 1 - Vamos criar uma função que recebe review dos usuários, precisamos utilizar o narrowing para receber o dado;
+2 - As possibilidades são booleanas e number;
+
+3 - Serão enviados números de 1 a 5 (estrelas, prever uma mensagem para cada uma destas notas;
+  4 - Ou false, que é quando o usuário não deixa uma review, prever um retorno para este caso também)*/
+const reviewUser = (avaliacao) => {
+    if (!avaliacao) {
+        console.log(`Você não fez a avaliação!`);
+        return;
+    }
+    console.log(`Sua avaliação foi: ${avaliacao}, obrigada!`);
+};
+reviewUser(5);
+reviewUser(false);
+reviewUser(4);
